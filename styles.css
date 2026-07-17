@@ -142,7 +142,7 @@ select {
 
 .hero-content {
   position: relative;
-  max-width: 760px;
+  max-width: 880px;
   padding: 140px clamp(20px, 6vw, 76px) 92px;
 }
 
@@ -163,11 +163,11 @@ p {
 }
 
 h1 {
-  max-width: 11ch;
+  max-width: 820px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.8rem, 10vw, 8.6rem);
-  line-height: 0.88;
+  font-size: 7rem;
+  line-height: 0.94;
   letter-spacing: 0;
 }
 
@@ -800,8 +800,9 @@ input[type="checkbox"] {
   }
 
   h1 {
-    max-width: 9ch;
-    font-size: clamp(3.5rem, 18vw, 5.8rem);
+    max-width: 680px;
+    font-size: 4.6rem;
+    line-height: 0.96;
   }
 
   .intro,
@@ -830,6 +831,11 @@ input[type="checkbox"] {
 
   .button {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 3.35rem;
+    line-height: 1;
   }
 
   .intro > div,
