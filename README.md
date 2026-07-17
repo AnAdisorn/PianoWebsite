@@ -6,6 +6,25 @@ A static promotional website for musicians connected to an institute, its alumni
 
 Open `index.html` in a browser, or serve the folder with any static web server.
 
+## Deploy to GitHub Pages
+
+1. Create an empty GitHub repository.
+2. Add it as the remote for this local repo:
+
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   ```
+
+3. Push the `main` branch:
+
+   ```bash
+   git push -u origin main
+   ```
+
+4. In GitHub, open the repository, then go to **Settings > Pages** and set **Source** to **GitHub Actions**.
+
+The included `.github/workflows/pages.yml` workflow deploys the static site whenever `main` is pushed.
+
 ## Customize
 
 - Replace `Music Circle` with the institute or project name.
