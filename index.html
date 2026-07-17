@@ -7,8 +7,43 @@
       name="description"
       content="A musician promotion platform for institute artists, alumni, collaborators, and independent performers."
     >
+    <meta name="theme-color" content="#191816">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Music Circle | Musician Promotion Platform">
+    <meta
+      property="og:description"
+      content="Discover institute artists, alumni, and external collaborators by discipline, location, availability, and media."
+    >
+    <meta property="og:image" content="assets/hero-musicians.png">
+    <meta property="og:image:width" content="1672">
+    <meta property="og:image:height" content="941">
+    <meta property="og:site_name" content="Music Circle">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Music Circle | Musician Promotion Platform">
+    <meta
+      name="twitter:description"
+      content="A directory and promotion hub for musicians connected to an institute and its wider artistic network."
+    >
+    <meta name="twitter:image" content="assets/hero-musicians.png">
     <title>Music Circle | Musician Promotion Platform</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Music Circle",
+        "description": "A musician promotion platform for institute artists, alumni, collaborators, and independent performers.",
+        "about": {
+          "@type": "PerformingArtsTheater",
+          "name": "Music Circle artist network"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "#musicians",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
