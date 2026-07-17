@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A musician promotion platform for institute artists, alumni, collaborators, and independent performers."
+    >
+    <title>Music Circle | Musician Promotion Platform</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Music Circle home">
+        <span class="brand-mark" aria-hidden="true">MC</span>
+        <span>Music Circle</span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="#musicians">Musicians</a>
+        <a href="#events">Events</a>
+        <a href="#submit">Submit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-musicians.png" alt="Musicians performing together in a recital hall">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Institute artists, alumni, and global collaborators</p>
+          <h1 id="hero-title">A living stage for musicians worth hearing.</h1>
+          <p class="hero-copy">
+            Promote performers, connect concert organizers, and keep audiences close to the music community inside and beyond the institute.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#musicians">Explore musicians</a>
+            <a class="button secondary" href="#submit">Nominate a musician</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" aria-label="Platform highlights">
+        <div>
+          <span class="metric">42</span>
+          <span class="metric-label">featured musicians</span>
+        </div>
+        <div>
+          <span class="metric">18</span>
+          <span class="metric-label">upcoming performances</span>
+        </div>
+        <div>
+          <span class="metric">9</span>
+          <span class="metric-label">countries represented</span>
+        </div>
+      </section>
+
+      <section class="section" id="musicians" aria-labelledby="musicians-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Artist directory</p>
+            <h2 id="musicians-title">Discover musicians by discipline, location, and relationship to the institute.</h2>
+          </div>
+          <div class="filter-group" aria-label="Filter musician profiles">
+            <button class="filter-button is-active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="institute">Institute</button>
+            <button class="filter-button" type="button" data-filter="external">External</button>
+            <button class="filter-button" type="button" data-filter="alumni">Alumni</button>
+          </div>
+        </div>
+
+        <div class="artist-grid" id="artist-grid">
+          <article class="artist-card" data-category="institute">
+            <div class="artist-avatar">AL</div>
+            <div class="artist-body">
+              <p class="artist-type">Institute artist</p>
+              <h3>Amina Laurent</h3>
+              <p>Contemporary repertoire, chamber music, and composer collaborations for piano and mixed ensemble.</p>
+              <dl>
+                <div><dt>Base</dt><dd>Berlin</dd></div>
+                <div><dt>Available for</dt><dd>Recitals, masterclasses</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="artist-card" data-category="external">
+            <div class="artist-avatar">MK</div>
+            <div class="artist-body">
+              <p class="artist-type">External collaborator</p>
+              <h3>Milan Kovac</h3>
+              <p>Historical performance practice, early keyboard, lecture-recitals, and recording projects.</p>
+              <dl>
+                <div><dt>Base</dt><dd>Prague</dd></div>
+                <div><dt>Available for</dt><dd>Festivals, talks</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="artist-card" data-category="alumni">
+            <div class="artist-avatar">SN</div>
+            <div class="artist-body">
+              <p class="artist-type">Alumni</p>
+              <h3>Sofia Nakamura</h3>
+              <p>Violin recital programming with a focus on Schumann, Ravel, and new commissions.</p>
+              <dl>
+                <div><dt>Base</dt><dd>Tokyo</dd></div>
+                <div><dt>Available for</dt><dd>Concerts, juries</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="events" aria-labelledby="events-title">
+        <div class="section-copy">
+          <p class="eyebrow">Programming</p>
+          <h2 id="events-title">Turn musician profiles into attendance, bookings, and collaborations.</h2>
+          <p>
+            The event stream can highlight recitals, ensemble projects, guest appearances, competitions, livestreams, and recording launches.
+          </p>
+        </div>
+        <div class="event-list" aria-label="Upcoming events">
+          <article class="event-item">
+            <time datetime="2026-09-18">18 Sep</time>
+            <div>
+              <h3>New Voices Music Forum</h3>
+              <p>Young artists from the institute present short programs and speak with curators.</p>
+            </div>
+          </article>
+          <article class="event-item">
+            <time datetime="2026-10-04">04 Oct</time>
+            <div>
+              <h3>Alumni Recital Series</h3>
+              <p>International alumni return for a weekend of performances and coaching sessions.</p>
+            </div>
+          </article>
+          <article class="event-item">
+            <time datetime="2026-11-12">12 Nov</time>
+            <div>
+              <h3>Collaborative Music Lab</h3>
+              <p>Open rehearsal format for singers, instrumentalists, composers, and collaborative keyboard artists.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section submission" id="submit" aria-labelledby="submit-title">
+        <div>
+          <p class="eyebrow">Open call</p>
+          <h2 id="submit-title">Nominate a musician or submit your own profile.</h2>
+          <p>
+            Collect biographies, instruments or voice type, repertoire interests, media links, location, institute relationship, and booking contact details.
+          </p>
+        </div>
+        <form class="submission-form" aria-label="Musician profile submission">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" placeholder="Full name">
+          </label>
+          <label>
+            Relationship
+            <select name="relationship">
+              <option>Institute artist</option>
+              <option>Alumni</option>
+              <option>External collaborator</option>
+              <option>Guest artist</option>
+            </select>
+          </label>
+          <label>
+            Profile link
+            <input type="url" name="profile" placeholder="https://">
+          </label>
+          <button class="button primary" type="submit">Prepare submission</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">MC</span>
+          <span>Music Circle</span>
+        </a>
+        <p>Replace this with your institute name, editorial policy, and contact address.</p>
+      </div>
+      <a href="mailto:music@example.org">music@example.org</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
