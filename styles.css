@@ -8,6 +8,7 @@
   --accent-strong: #6d241d;
   --gold: #c4923e;
   --green: #315f52;
+  --focus: #f0c85a;
   --shadow: 0 20px 50px rgba(25, 24, 22, 0.12);
 }
 
@@ -32,10 +33,36 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
 button,
 input,
 select {
   font: inherit;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 20;
+  top: 12px;
+  left: 12px;
+  transform: translateY(-160%);
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: var(--ink);
+  background: #fff;
+  font-weight: 800;
+  box-shadow: var(--shadow);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .site-header {
