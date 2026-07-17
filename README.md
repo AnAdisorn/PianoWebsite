@@ -31,6 +31,7 @@ The included `.github/workflows/pages.yml` workflow deploys the static site when
 - Update the musician cards in `index.html`.
 - Replace placeholder contact email `music@example.org`.
 - Add real event dates, submission requirements, and media links.
+- Use `PROFILE_TEMPLATE.md` to collect consistent profile details before publishing real artists.
 
 ## Generated Asset
 
