@@ -3,6 +3,7 @@ const artistCards = document.querySelectorAll(".artist-card");
 const artistSearch = document.querySelector("#artist-search");
 const emptyState = document.querySelector("#empty-state");
 const submissionForm = document.querySelector(".submission-form");
+const profileButtons = document.querySelectorAll("[data-profile-target]");
 
 const activeFilters = {
   relationship: "all",
@@ -44,6 +45,17 @@ filterButtons.forEach((button) => {
 });
 
 artistSearch.addEventListener("input", applyArtistFilters);
+
+profileButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const profile = document.getElementById(button.dataset.profileTarget);
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+    profile.hidden = isExpanded;
+    button.setAttribute("aria-expanded", String(!isExpanded));
+    button.textContent = isExpanded ? "View profile" : "Hide profile";
+  });
+});
 
 submissionForm.addEventListener("submit", (event) => {
   event.preventDefault();

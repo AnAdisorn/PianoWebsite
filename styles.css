@@ -349,6 +349,43 @@ h2 {
   margin: 0;
 }
 
+.artist-extra {
+  margin-top: 18px;
+  padding: 14px;
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  background: #f7f2e9;
+}
+
+.artist-extra p {
+  margin: 0;
+}
+
+.artist-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: #fff;
+  font-weight: 760;
+  cursor: pointer;
+}
+
+.text-button:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
 .split-section {
   background: #ede9df;
 }
