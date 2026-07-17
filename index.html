@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="A musician promotion platform for institute artists, alumni, collaborators, and independent performers."
+      content="The institute's public home for promoting musicians, events, collaborations, and donor-supported artistic projects."
     >
     <meta name="theme-color" content="#191816">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Music Circle | Musician Promotion Platform">
     <meta
       property="og:description"
-      content="Discover institute artists, alumni, and external collaborators by discipline, location, availability, and media."
+      content="Discover institute musicians, upcoming performances, past event records, collaborations, and ways to support the artist community."
     >
     <meta property="og:image" content="assets/hero-musicians.png">
     <meta property="og:image:width" content="1672">
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Music Circle | Musician Promotion Platform">
     <meta
       name="twitter:description"
-      content="A directory and promotion hub for musicians connected to an institute and its wider artistic network."
+      content="The institute's public hub for musicians, events, collaborations, and donor-supported artistic projects."
     >
     <meta name="twitter:image" content="assets/hero-musicians.png">
     <title>Music Circle | Musician Promotion Platform</title>
@@ -34,7 +34,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Music Circle",
-        "description": "A musician promotion platform for institute artists, alumni, collaborators, and independent performers.",
+        "description": "The institute's public home for promoting musicians, events, collaborations, and donor-supported artistic projects.",
         "about": {
           "@type": "PerformingArtsTheater",
           "name": "Music Circle artist network"
@@ -55,9 +55,11 @@
         <span>Music Circle</span>
       </a>
       <nav class="nav-links" aria-label="Site sections">
+        <a href="#institute">Institute</a>
         <a href="#pathways">Pathways</a>
         <a href="#musicians">Musicians</a>
         <a href="#events">Events</a>
+        <a href="#support">Donate</a>
         <a href="#submit">Submit</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -68,14 +70,14 @@
         <img class="hero-image" src="assets/hero-musicians.png" alt="Musicians performing together in a recital hall">
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Institute artists, alumni, and global collaborators</p>
-          <h1 id="hero-title">A living stage for musicians worth hearing.</h1>
+          <p class="eyebrow">The institute's public musician showcase</p>
+          <h1 id="hero-title">Meet the musicians shaping our stage.</h1>
           <p class="hero-copy">
-            Promote performers, connect concert organizers, and keep audiences close to the music community inside and beyond the institute.
+            Promote institute artists, alumni, and invited collaborators through profiles, event records, performances, and donor-supported projects.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#musicians">Explore musicians</a>
-            <a class="button secondary" href="#submit">Nominate a musician</a>
+            <a class="button secondary" href="#support">Support the institute</a>
           </div>
         </div>
       </section>
@@ -83,15 +85,41 @@
       <section class="intro" aria-label="Platform highlights">
         <div>
           <span class="metric">42</span>
-          <span class="metric-label">featured musicians</span>
+          <span class="metric-label">featured institute musicians</span>
         </div>
         <div>
-          <span class="metric">12</span>
-          <span class="metric-label">disciplines represented</span>
+          <span class="metric">28</span>
+          <span class="metric-label">recorded events</span>
         </div>
         <div>
           <span class="metric">9</span>
-          <span class="metric-label">countries represented</span>
+          <span class="metric-label">countries in the network</span>
+        </div>
+      </section>
+
+      <section class="section institute-feature" id="institute" aria-labelledby="institute-title">
+        <div class="section-heading compact-heading">
+          <div>
+            <p class="eyebrow">Main advertisement</p>
+            <h2 id="institute-title">A public window into the institute's musicians, projects, and artistic life.</h2>
+          </div>
+          <p>
+            Use this page as the first destination for presenters, donors, partner institutions, prospective students, and audiences who want to understand the people behind the institute.
+          </p>
+        </div>
+        <div class="feature-grid" aria-label="Institute promotion highlights">
+          <article class="feature-item">
+            <h3>Showcase musicians</h3>
+            <p>Present profiles for current students, faculty artists, alumni, guests, and external collaborators in one searchable public directory.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Promote events</h3>
+            <p>Advertise upcoming concerts while preserving past programs as public records for audiences, funders, and future collaborators.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Invite support</h3>
+            <p>Give donors clear ways to fund concerts, scholarships, recordings, outreach, and professional opportunities for institute musicians.</p>
+          </article>
         </div>
       </section>
 
@@ -281,37 +309,123 @@
         <p class="empty-state" id="empty-state" hidden>No musicians match the current filters.</p>
       </section>
 
-      <section class="section split-section" id="events" aria-labelledby="events-title">
-        <div class="section-copy">
-          <p class="eyebrow">Programming</p>
-          <h2 id="events-title">Turn musician profiles into attendance, bookings, and collaborations.</h2>
+      <section class="section events-section" id="events" aria-labelledby="events-title">
+        <div class="section-heading compact-heading">
+          <div>
+            <p class="eyebrow">Events and records</p>
+            <h2 id="events-title">Advertise what is next and preserve what already happened.</h2>
+          </div>
           <p>
-            The event stream can highlight recitals, ensemble projects, guest appearances, competitions, livestreams, and recording launches.
+            Upcoming events create momentum. Past event records show the institute's artistic history and make it easier for donors and partners to see impact over time.
           </p>
         </div>
-        <div class="event-list" aria-label="Upcoming events">
-          <article class="event-item">
-            <time datetime="2026-09-18">18 Sep</time>
-            <div>
-              <h3>New Voices Music Forum</h3>
-              <p>Young artists from the institute present short programs and speak with curators.</p>
+        <div class="event-columns">
+          <div>
+            <div class="event-heading">
+              <h3>Upcoming events</h3>
+              <a href="mailto:music@example.org?subject=Event listing update">Submit event</a>
             </div>
+            <div class="event-list" aria-label="Upcoming events">
+              <article class="event-item upcoming-event">
+                <time datetime="2026-09-18">18 Sep</time>
+                <div>
+                  <p class="event-status">Upcoming</p>
+                  <h3>New Voices Music Forum</h3>
+                  <p>Young artists from the institute present short programs and speak with curators.</p>
+                  <a href="mailto:music@example.org?subject=Ticket inquiry: New Voices Music Forum">Ticket inquiry</a>
+                </div>
+              </article>
+              <article class="event-item upcoming-event">
+                <time datetime="2026-10-04">04 Oct</time>
+                <div>
+                  <p class="event-status">Upcoming</p>
+                  <h3>Alumni Recital Series</h3>
+                  <p>International alumni return for a weekend of performances and coaching sessions.</p>
+                  <a href="mailto:music@example.org?subject=Ticket inquiry: Alumni Recital Series">Ticket inquiry</a>
+                </div>
+              </article>
+              <article class="event-item upcoming-event">
+                <time datetime="2026-11-12">12 Nov</time>
+                <div>
+                  <p class="event-status">Upcoming</p>
+                  <h3>Collaborative Music Lab</h3>
+                  <p>Open rehearsal format for singers, instrumentalists, composers, and collaborative keyboard artists.</p>
+                  <a href="mailto:music@example.org?subject=Participation inquiry: Collaborative Music Lab">Participation inquiry</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div>
+            <div class="event-heading">
+              <h3>Past event records</h3>
+              <a href="mailto:music@example.org?subject=Past event archive update">Send record</a>
+            </div>
+            <div class="event-list" aria-label="Past event records">
+              <article class="event-item past-event">
+                <time datetime="2026-05-22">22 May</time>
+                <div>
+                  <p class="event-status">Archive</p>
+                  <h3>Spring Institute Showcase</h3>
+                  <p>Solo and chamber performances by institute musicians, with donor reception notes and program highlights.</p>
+                  <a href="mailto:music@example.org?subject=Record request: Spring Institute Showcase">Request record</a>
+                </div>
+              </article>
+              <article class="event-item past-event">
+                <time datetime="2026-03-14">14 Mar</time>
+                <div>
+                  <p class="event-status">Archive</p>
+                  <h3>Composer-Pianist Workshop</h3>
+                  <p>Collaborative readings between composers, pianists, and chamber musicians from inside and outside the institute.</p>
+                  <a href="mailto:music@example.org?subject=Record request: Composer-Pianist Workshop">Request record</a>
+                </div>
+              </article>
+              <article class="event-item past-event">
+                <time datetime="2025-12-08">08 Dec</time>
+                <div>
+                  <p class="event-status">Archive</p>
+                  <h3>Winter Benefit Concert</h3>
+                  <p>Fundraising concert supporting student travel, recording sessions, and guest masterclasses.</p>
+                  <a href="mailto:music@example.org?subject=Record request: Winter Benefit Concert">Request record</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support-section" id="support" aria-labelledby="support-title">
+        <div class="section-heading compact-heading">
+          <div>
+            <p class="eyebrow">Donations</p>
+            <h2 id="support-title">Support musicians beyond the stage.</h2>
+          </div>
+          <p>
+            Donations can help the institute fund performances, artist travel, recordings, masterclasses, scholarships, and outreach projects.
+          </p>
+        </div>
+        <div class="donation-grid" aria-label="Donation options">
+          <article class="donation-card">
+            <p class="donation-amount">€25</p>
+            <h3>Audience supporter</h3>
+            <p>Helps cover program materials, livestream preparation, or archive maintenance.</p>
+            <a class="button primary" href="mailto:music@example.org?subject=Donation inquiry: Audience supporter">Donate €25</a>
           </article>
-          <article class="event-item">
-            <time datetime="2026-10-04">04 Oct</time>
-            <div>
-              <h3>Alumni Recital Series</h3>
-              <p>International alumni return for a weekend of performances and coaching sessions.</p>
-            </div>
+          <article class="donation-card is-featured">
+            <p class="donation-amount">€100</p>
+            <h3>Artist opportunity</h3>
+            <p>Supports coaching, guest artist sessions, local travel, or recording preparation for institute musicians.</p>
+            <a class="button primary" href="mailto:music@example.org?subject=Donation inquiry: Artist opportunity">Donate €100</a>
           </article>
-          <article class="event-item">
-            <time datetime="2026-11-12">12 Nov</time>
-            <div>
-              <h3>Collaborative Music Lab</h3>
-              <p>Open rehearsal format for singers, instrumentalists, composers, and collaborative keyboard artists.</p>
-            </div>
+          <article class="donation-card">
+            <p class="donation-amount">Custom</p>
+            <h3>Project partner</h3>
+            <p>Start a conversation about sponsoring concerts, scholarships, outreach, commissions, or an event series.</p>
+            <a class="button primary" href="mailto:music@example.org?subject=Donation inquiry: Project partner">Discuss support</a>
           </article>
         </div>
+        <p class="donation-note">
+          Replace these mail links with your institute's official donation or payment links before public fundraising.
+        </p>
       </section>
 
       <section class="section review-process" aria-labelledby="review-title">
