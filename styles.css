@@ -550,6 +550,20 @@ select {
   background: #fff;
 }
 
+input[type="checkbox"] {
+  min-height: 18px;
+  width: 18px;
+  margin: 3px 0 0;
+  accent-color: var(--green);
+}
+
+.checkbox-label {
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: start;
+  color: var(--ink);
+  font-weight: 680;
+}
+
 .site-footer {
   display: flex;
   align-items: flex-start;

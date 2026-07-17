@@ -64,12 +64,13 @@ submissionForm.addEventListener("submit", (event) => {
   const relationship = formData.get("relationship");
   const discipline = formData.get("discipline") || "";
   const focus = formData.get("focus") || "";
+  const consent = formData.get("consent") === "confirmed" ? "Confirmed" : "Not confirmed";
 
   window.location.href = `mailto:music@example.org?subject=Musician profile submission: ${encodeURIComponent(
     name
   )}&body=${encodeURIComponent(
     `Name: ${name}\nInstrument or voice type: ${discipline}\nRelationship: ${relationship}\nProfile link: ${
       formData.get("profile") || ""
-    }\nShort focus: ${focus}`
+    }\nShort focus: ${focus}\nPermission for public promotion: ${consent}`
   )}`;
 });
