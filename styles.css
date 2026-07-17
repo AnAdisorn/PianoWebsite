@@ -73,8 +73,16 @@ select {
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: clamp(14px, 3vw, 28px);
   font-size: 0.94rem;
+}
+
+.nav-links a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .hero {
@@ -513,10 +521,24 @@ select {
   .site-header {
     position: absolute;
     align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 26px;
   }
 
   .nav-links {
-    display: none;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    font-size: 0.88rem;
+  }
+
+  .nav-links a {
+    min-height: 34px;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.16);
   }
 
   .hero {
