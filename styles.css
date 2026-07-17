@@ -496,6 +496,32 @@ h2 {
   text-align: center;
 }
 
+.review-process {
+  background: var(--paper);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.review-item {
+  padding: 22px;
+  border-top: 4px solid var(--green);
+  background: #fff;
+}
+
+.review-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+}
+
+.review-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .submission-form {
   display: grid;
   gap: 14px;
@@ -590,6 +616,7 @@ select {
   .split-section,
   .submission,
   .pathway-grid,
+  .review-grid,
   .artist-grid {
     grid-template-columns: 1fr;
   }
