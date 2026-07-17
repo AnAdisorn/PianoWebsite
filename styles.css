@@ -232,6 +232,15 @@ h2 {
   letter-spacing: 0;
 }
 
+.directory-tools {
+  display: grid;
+  gap: 14px;
+}
+
+.search-label {
+  color: var(--muted);
+}
+
 .filter-group {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +283,15 @@ h2 {
 
 .artist-card.is-hidden {
   display: none;
+}
+
+.empty-state {
+  margin: 28px 0 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  background: #fff;
 }
 
 .artist-avatar {

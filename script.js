@@ -1,28 +1,63 @@
 const filterButtons = document.querySelectorAll("[data-filter]");
 const artistCards = document.querySelectorAll(".artist-card");
+const artistSearch = document.querySelector("#artist-search");
+const emptyState = document.querySelector("#empty-state");
 const submissionForm = document.querySelector(".submission-form");
+
+const activeFilters = {
+  relationship: "all",
+  discipline: "all",
+};
+
+function applyArtistFilters() {
+  const query = artistSearch.value.trim().toLowerCase();
+  let visibleCount = 0;
+
+  artistCards.forEach((card) => {
+    const matchesRelationship =
+      activeFilters.relationship === "all" || card.dataset.relationship === activeFilters.relationship;
+    const matchesDiscipline = activeFilters.discipline === "all" || card.dataset.discipline === activeFilters.discipline;
+    const matchesSearch = query === "" || card.dataset.search.includes(query);
+    const shouldShow = matchesRelationship && matchesDiscipline && matchesSearch;
+
+    card.classList.toggle("is-hidden", !shouldShow);
+    if (shouldShow) visibleCount += 1;
+  });
+
+  emptyState.hidden = visibleCount !== 0;
+}
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    const group = button.dataset.filterGroup;
     const filter = button.dataset.filter;
 
-    filterButtons.forEach((item) => item.classList.remove("is-active"));
-    button.classList.add("is-active");
+    activeFilters[group] = filter;
 
-    artistCards.forEach((card) => {
-      const shouldShow = filter === "all" || card.dataset.category === filter;
-      card.classList.toggle("is-hidden", !shouldShow);
-    });
+    filterButtons
+      .forEach((item) => {
+        if (item.dataset.filterGroup === group) item.classList.remove("is-active");
+      });
+    button.classList.add("is-active");
+    applyArtistFilters();
   });
 });
+
+artistSearch.addEventListener("input", applyArtistFilters);
 
 submissionForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(submissionForm);
   const name = formData.get("name") || "this musician";
   const relationship = formData.get("relationship");
+  const discipline = formData.get("discipline") || "";
+  const focus = formData.get("focus") || "";
 
   window.location.href = `mailto:music@example.org?subject=Musician profile submission: ${encodeURIComponent(
     name
-  )}&body=${encodeURIComponent(`Name: ${name}\nRelationship: ${relationship}\nProfile link: ${formData.get("profile") || ""}`)}`;
+  )}&body=${encodeURIComponent(
+    `Name: ${name}\nInstrument or voice type: ${discipline}\nRelationship: ${relationship}\nProfile link: ${
+      formData.get("profile") || ""
+    }\nShort focus: ${focus}`
+  )}`;
 });

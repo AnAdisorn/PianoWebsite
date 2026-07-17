@@ -47,8 +47,8 @@
           <span class="metric-label">featured musicians</span>
         </div>
         <div>
-          <span class="metric">18</span>
-          <span class="metric-label">upcoming performances</span>
+          <span class="metric">12</span>
+          <span class="metric-label">disciplines represented</span>
         </div>
         <div>
           <span class="metric">9</span>
@@ -62,54 +62,113 @@
             <p class="eyebrow">Artist directory</p>
             <h2 id="musicians-title">Discover musicians by discipline, location, and relationship to the institute.</h2>
           </div>
-          <div class="filter-group" aria-label="Filter musician profiles">
-            <button class="filter-button is-active" type="button" data-filter="all">All</button>
-            <button class="filter-button" type="button" data-filter="institute">Institute</button>
-            <button class="filter-button" type="button" data-filter="external">External</button>
-            <button class="filter-button" type="button" data-filter="alumni">Alumni</button>
+          <div class="directory-tools" aria-label="Find musician profiles">
+            <label class="search-label" for="artist-search">
+              Search
+              <input id="artist-search" type="search" placeholder="Name, city, instrument, focus">
+            </label>
+            <div class="filter-group" aria-label="Filter by relationship">
+              <button class="filter-button is-active" type="button" data-filter-group="relationship" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter-group="relationship" data-filter="institute">Institute</button>
+              <button class="filter-button" type="button" data-filter-group="relationship" data-filter="external">External</button>
+              <button class="filter-button" type="button" data-filter-group="relationship" data-filter="alumni">Alumni</button>
+            </div>
+            <div class="filter-group" aria-label="Filter by discipline">
+              <button class="filter-button is-active" type="button" data-filter-group="discipline" data-filter="all">All disciplines</button>
+              <button class="filter-button" type="button" data-filter-group="discipline" data-filter="keyboard">Keyboard</button>
+              <button class="filter-button" type="button" data-filter-group="discipline" data-filter="strings">Strings</button>
+              <button class="filter-button" type="button" data-filter-group="discipline" data-filter="voice">Voice</button>
+              <button class="filter-button" type="button" data-filter-group="discipline" data-filter="composition">Composition</button>
+            </div>
           </div>
         </div>
 
         <div class="artist-grid" id="artist-grid">
-          <article class="artist-card" data-category="institute">
+          <article class="artist-card" data-relationship="institute" data-discipline="keyboard" data-search="amina laurent berlin piano contemporary chamber music composer collaborations recitals masterclasses">
             <div class="artist-avatar">AL</div>
             <div class="artist-body">
-              <p class="artist-type">Institute artist</p>
+              <p class="artist-type">Institute artist · Piano</p>
               <h3>Amina Laurent</h3>
               <p>Contemporary repertoire, chamber music, and composer collaborations for piano and mixed ensemble.</p>
               <dl>
                 <div><dt>Base</dt><dd>Berlin</dd></div>
                 <div><dt>Available for</dt><dd>Recitals, masterclasses</dd></div>
+                <div><dt>Media</dt><dd>Studio video, live program notes</dd></div>
               </dl>
             </div>
           </article>
 
-          <article class="artist-card" data-category="external">
+          <article class="artist-card" data-relationship="external" data-discipline="keyboard" data-search="milan kovac prague early keyboard historical performance lecture recitals recording festivals talks">
             <div class="artist-avatar">MK</div>
             <div class="artist-body">
-              <p class="artist-type">External collaborator</p>
+              <p class="artist-type">External collaborator · Early keyboard</p>
               <h3>Milan Kovac</h3>
               <p>Historical performance practice, early keyboard, lecture-recitals, and recording projects.</p>
               <dl>
                 <div><dt>Base</dt><dd>Prague</dd></div>
                 <div><dt>Available for</dt><dd>Festivals, talks</dd></div>
+                <div><dt>Media</dt><dd>Audio reel, repertoire list</dd></div>
               </dl>
             </div>
           </article>
 
-          <article class="artist-card" data-category="alumni">
+          <article class="artist-card" data-relationship="alumni" data-discipline="strings" data-search="sofia nakamura tokyo violin schumann ravel commissions concerts juries">
             <div class="artist-avatar">SN</div>
             <div class="artist-body">
-              <p class="artist-type">Alumni</p>
+              <p class="artist-type">Alumni · Violin</p>
               <h3>Sofia Nakamura</h3>
               <p>Violin recital programming with a focus on Schumann, Ravel, and new commissions.</p>
               <dl>
                 <div><dt>Base</dt><dd>Tokyo</dd></div>
                 <div><dt>Available for</dt><dd>Concerts, juries</dd></div>
+                <div><dt>Media</dt><dd>Press kit, recital excerpts</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="artist-card" data-relationship="institute" data-discipline="voice" data-search="leonie weiss munich soprano song opera chamber music auditions coaching">
+            <div class="artist-avatar">LW</div>
+            <div class="artist-body">
+              <p class="artist-type">Institute artist · Voice</p>
+              <h3>Leonie Weiss</h3>
+              <p>Soprano focused on song, chamber programs, and staged contemporary opera scenes.</p>
+              <dl>
+                <div><dt>Base</dt><dd>Munich</dd></div>
+                <div><dt>Available for</dt><dd>Concerts, auditions, coaching</dd></div>
+                <div><dt>Media</dt><dd>Headshots, aria samples</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="artist-card" data-relationship="external" data-discipline="composition" data-search="noah ibrahim amsterdam composer electronics chamber ensemble commissions workshops residencies">
+            <div class="artist-avatar">NI</div>
+            <div class="artist-body">
+              <p class="artist-type">External collaborator · Composition</p>
+              <h3>Noah Ibrahim</h3>
+              <p>Composer creating chamber works with live electronics, improvisation, and site-responsive formats.</p>
+              <dl>
+                <div><dt>Base</dt><dd>Amsterdam</dd></div>
+                <div><dt>Available for</dt><dd>Commissions, workshops</dd></div>
+                <div><dt>Media</dt><dd>Scores, recordings, tech rider</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="artist-card" data-relationship="alumni" data-discipline="strings" data-search="mateo rivera madrid cello chamber music orchestra auditions education outreach">
+            <div class="artist-avatar">MR</div>
+            <div class="artist-body">
+              <p class="artist-type">Alumni · Cello</p>
+              <h3>Mateo Rivera</h3>
+              <p>Cellist balancing chamber music, orchestral leadership, and education projects for young audiences.</p>
+              <dl>
+                <div><dt>Base</dt><dd>Madrid</dd></div>
+                <div><dt>Available for</dt><dd>Chamber music, outreach</dd></div>
+                <div><dt>Media</dt><dd>Biography, ensemble footage</dd></div>
               </dl>
             </div>
           </article>
         </div>
+        <p class="empty-state" id="empty-state" hidden>No musicians match the current filters.</p>
       </section>
 
       <section class="section split-section" id="events" aria-labelledby="events-title">
@@ -156,7 +215,11 @@
         <form class="submission-form" aria-label="Musician profile submission">
           <label>
             Name
-            <input type="text" name="name" autocomplete="name" placeholder="Full name">
+            <input type="text" name="name" autocomplete="name" placeholder="Full name" required>
+          </label>
+          <label>
+            Instrument or voice type
+            <input type="text" name="discipline" placeholder="Piano, violin, soprano, composition" required>
           </label>
           <label>
             Relationship
@@ -170,6 +233,10 @@
           <label>
             Profile link
             <input type="url" name="profile" placeholder="https://">
+          </label>
+          <label>
+            Short focus
+            <input type="text" name="focus" placeholder="Repertoire, collaborations, teaching, commissions">
           </label>
           <button class="button primary" type="submit">Prepare submission</button>
         </form>
