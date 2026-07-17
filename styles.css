@@ -212,6 +212,43 @@ h1 {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.button.dark-secondary {
+  color: var(--ink);
+  border-color: var(--line);
+  background: #fff;
+}
+
+.error-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #ede9df;
+}
+
+.error-shell {
+  width: min(720px, 100%);
+  padding: clamp(28px, 6vw, 64px);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.error-brand {
+  margin-bottom: 48px;
+}
+
+.error-shell h1 {
+  max-width: 9ch;
+  color: var(--ink);
+}
+
+.error-shell p:not(.eyebrow) {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
 .intro {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
