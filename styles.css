@@ -313,74 +313,6 @@ h2 {
   letter-spacing: 0;
 }
 
-.pathways {
-  background: #f4f0e7;
-}
-
-.institute-feature {
-  background: var(--paper);
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.feature-item {
-  min-height: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: var(--shadow);
-}
-
-.feature-item h3 {
-  margin: 0 0 10px;
-  font-size: 1.24rem;
-}
-
-.feature-item p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.pathway-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.pathway-item {
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-}
-
-.pathway-number {
-  display: inline-flex;
-  margin-bottom: 34px;
-  color: var(--accent);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.3rem;
-  line-height: 1;
-}
-
-.pathway-item h3 {
-  margin: 0 0 10px;
-  font-size: 1.24rem;
-}
-
-.pathway-item p {
-  margin: 0;
-  color: var(--muted);
-}
-
 .directory-tools {
   display: grid;
   gap: 14px;
@@ -535,15 +467,13 @@ h2 {
   color: var(--green);
 }
 
-.events-section,
+.future-events-section,
 .split-section {
   background: #ede9df;
 }
 
-.event-columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+.highlight-events-section {
+  background: #f4f0e7;
 }
 
 .event-heading {
@@ -570,6 +500,10 @@ h2 {
 .event-list {
   display: grid;
   gap: 14px;
+}
+
+.event-list-wide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .event-item {
@@ -809,9 +743,7 @@ input[type="checkbox"] {
   .section-heading,
   .split-section,
   .submission,
-  .event-columns,
-  .feature-grid,
-  .pathway-grid,
+  .event-list-wide,
   .donation-grid,
   .review-grid,
   .artist-grid {
