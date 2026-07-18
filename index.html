@@ -26,7 +26,7 @@
     <title>MPI-Dresden Music Society</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=10">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -47,6 +47,7 @@
       <nav class="nav-links" aria-label="Site sections">
         <a href="#future-events">Future Events</a>
         <a href="#past-events">Past Events</a>
+        <a href="recordings.html">Recordings</a>
         <a href="#support">Donation</a>
       </nav>
     </header>
@@ -69,49 +70,67 @@
           <p class="eyebrow">Future events</p>
           <div class="heading-row">
             <h2 id="future-title">Upcoming events</h2>
-            <button class="ghost-button" type="button" data-suggest-event>Suggest an event</button>
           </div>
-          <p class="suggestion-note" id="suggestion-note" hidden>
-            Thank you. Please send the event title, time, place, short description, genre, and program to the society organizers.
+          <p class="suggestion-contact">
+            Suggest an event by emailing
+            <a class="email-link" href="mailto:music-society-organizers@example.org">
+              music-society-organizers@example.org
+            </a>
+            with the title, time, place, description, genre, and program.
           </p>
         </div>
 
-        <div class="event-grid">
-          <article class="event-card">
-            <img src="assets/Photos/Qianyu_cover.jpg" alt="Album cover for an upcoming piano event">
-            <div class="event-content">
-              <p class="event-date">18 September 2026 · 18:00</p>
-              <h3>New Voices Piano Evening</h3>
-              <p class="event-place">MPI-PKS seminar hall</p>
-              <p>Theme: institute musicians in recital. Genre: classical piano, chamber music, and short contemporary works.</p>
-              <details>
-                <summary>Full program</summary>
-                <ul>
-                  <li>Placeholder: opening work</li>
-                  <li>Placeholder: main recital work</li>
-                  <li>Placeholder: ensemble or encore</li>
-                </ul>
-              </details>
-            </div>
-          </article>
+        <div class="event-slideshow" data-slideshow aria-label="Upcoming event slideshow">
+          <div class="event-viewport">
+            <div class="event-track">
+              <article class="event-card">
+                <figure class="event-media">
+                  <img src="assets/Photos/Qianyu_cover.jpg" alt="Album cover for an upcoming piano event">
+                </figure>
+                <div class="event-content">
+                  <p class="event-date">18 September 2026 · 18:00</p>
+                  <h3>New Voices Piano Evening</h3>
+                  <p class="event-place">MPI-PKS seminar hall</p>
+                  <p>Theme: institute musicians in recital. Genre: classical piano, chamber music, and short contemporary works.</p>
+                  <details>
+                    <summary>Full program</summary>
+                    <ul>
+                      <li>Placeholder: opening work</li>
+                      <li>Placeholder: main recital work</li>
+                      <li>Placeholder: ensemble or encore</li>
+                    </ul>
+                  </details>
+                </div>
+              </article>
 
-          <article class="event-card">
-            <img src="assets/hero-musicians.png" alt="Musicians performing in a recital hall">
-            <div class="event-content">
-              <p class="event-date">4 October 2026 · 19:30</p>
-              <h3>Autumn Chamber Gathering</h3>
-              <p class="event-place">MPI-CBG auditorium</p>
-              <p>Theme: informal chamber collaborations. Genre: classical, folk-inspired arrangements, and improvisation.</p>
-              <details>
-                <summary>Full program</summary>
-                <ul>
-                  <li>Placeholder: duet or trio</li>
-                  <li>Placeholder: guest performance</li>
-                  <li>Placeholder: audience discussion</li>
-                </ul>
-              </details>
+              <article class="event-card">
+                <figure class="event-media">
+                  <img src="assets/hero-musicians.png" alt="Musicians performing in a recital hall">
+                </figure>
+                <div class="event-content">
+                  <p class="event-date">4 October 2026 · 19:30</p>
+                  <h3>Autumn Chamber Gathering</h3>
+                  <p class="event-place">MPI-CBG auditorium</p>
+                  <p>Theme: informal chamber collaborations. Genre: classical, folk-inspired arrangements, and improvisation.</p>
+                  <details>
+                    <summary>Full program</summary>
+                    <ul>
+                      <li>Placeholder: duet or trio</li>
+                      <li>Placeholder: guest performance</li>
+                      <li>Placeholder: audience discussion</li>
+                    </ul>
+                  </details>
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
+          <button class="slide-arrow slide-arrow-prev" type="button" data-slide-prev aria-label="Previous upcoming event">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+          <button class="slide-arrow slide-arrow-next" type="button" data-slide-next aria-label="Next upcoming event">
+            <span aria-hidden="true">&gt;</span>
+          </button>
+          <div class="slideshow-dots" aria-label="Upcoming event slide controls"></div>
         </div>
       </section>
 
@@ -119,46 +138,72 @@
         <div class="section-heading">
           <p class="eyebrow">Past events</p>
           <h2 id="past-title">Records and recordings</h2>
+          <a class="text-link" href="recordings.html">Browse all recordings</a>
         </div>
 
-        <div class="event-grid">
-          <article class="event-card">
-            <img src="assets/Photos/Qianyu_cover.jpg" alt="Album cover for a past piano event">
-            <div class="event-content">
-              <p class="event-date">22 May 2026 · 18:00</p>
-              <h3>Spring Piano Showcase</h3>
-              <p class="event-place">MPI-PKS seminar hall</p>
-              <p>Theme: solo piano works performed by institute musicians. Genre: Romantic and late-Romantic piano music.</p>
-              <details>
-                <summary>Full program</summary>
-                <ul>
-                  <li>Placeholder: recital opening</li>
-                  <li>Placeholder: featured piano work</li>
-                  <li>Placeholder: closing piece</li>
-                </ul>
-              </details>
-              <a class="recording-link" href="assets/Records/Nocturne.AAC">Listen to recording</a>
-            </div>
-          </article>
+        <div class="event-slideshow" data-slideshow aria-label="Past event slideshow">
+          <div class="event-viewport">
+            <div class="event-track">
+              <article class="event-card">
+                <figure class="event-media">
+                  <img src="assets/Photos/Qianyu_cover.jpg" alt="Album cover for a past piano event">
+                </figure>
+                <div class="event-content">
+                  <p class="event-date">22 May 2026 · 18:00</p>
+                  <h3>Spring Piano Showcase</h3>
+                  <p class="event-place">MPI-PKS seminar hall</p>
+                  <p>Theme: solo piano works performed by institute musicians. Genre: Romantic and late-Romantic piano music.</p>
+                  <details>
+                    <summary>Full program</summary>
+                    <ul>
+                      <li>Placeholder: recital opening</li>
+                      <li>Placeholder: featured piano work</li>
+                      <li>Placeholder: closing piece</li>
+                    </ul>
+                  </details>
+                  <div class="recording-player">
+                    <audio controls preload="metadata" aria-label="Play Nocturne recording">
+                      <source src="assets/Records/Nocturne.AAC" type="audio/aac">
+                      Your browser does not support the audio player.
+                    </audio>
+                  </div>
+                </div>
+              </article>
 
-          <article class="event-card">
-            <img src="assets/hero-musicians.png" alt="Musicians performing in a recital hall">
-            <div class="event-content">
-              <p class="event-date">14 March 2026 · 17:30</p>
-              <h3>Composer-Pianist Workshop</h3>
-              <p class="event-place">MPI-PKS music room</p>
-              <p>Theme: readings and discussion between composers and pianists. Genre: contemporary classical and improvisation.</p>
-              <details>
-                <summary>Full program</summary>
-                <ul>
-                  <li>Placeholder: composer presentation</li>
-                  <li>Placeholder: piano reading</li>
-                  <li>Placeholder: discussion</li>
-                </ul>
-              </details>
-              <a class="recording-link" href="assets/Records/Ballade%20No.%202%20(Encore).AAC">Listen to recording</a>
+              <article class="event-card">
+                <figure class="event-media">
+                  <img src="assets/hero-musicians.png" alt="Musicians performing in a recital hall">
+                </figure>
+                <div class="event-content">
+                  <p class="event-date">14 March 2026 · 17:30</p>
+                  <h3>Composer-Pianist Workshop</h3>
+                  <p class="event-place">MPI-PKS music room</p>
+                  <p>Theme: readings and discussion between composers and pianists. Genre: contemporary classical and improvisation.</p>
+                  <details>
+                    <summary>Full program</summary>
+                    <ul>
+                      <li>Placeholder: composer presentation</li>
+                      <li>Placeholder: piano reading</li>
+                      <li>Placeholder: discussion</li>
+                    </ul>
+                  </details>
+                  <div class="recording-player">
+                    <audio controls preload="metadata" aria-label="Play Ballade No. 2 encore recording">
+                      <source src="assets/Records/Ballade%20No.%202%20(Encore).AAC" type="audio/aac">
+                      Your browser does not support the audio player.
+                    </audio>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
+          <button class="slide-arrow slide-arrow-prev" type="button" data-slide-prev aria-label="Previous past event">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+          <button class="slide-arrow slide-arrow-next" type="button" data-slide-next aria-label="Next past event">
+            <span aria-hidden="true">&gt;</span>
+          </button>
+          <div class="slideshow-dots" aria-label="Past event slide controls"></div>
         </div>
       </section>
 
@@ -184,6 +229,6 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=10"></script>
   </body>
 </html>
