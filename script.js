@@ -2,7 +2,6 @@ const filterButtons = document.querySelectorAll("[data-filter]");
 const artistCards = document.querySelectorAll(".artist-card");
 const artistSearch = document.querySelector("#artist-search");
 const emptyState = document.querySelector("#empty-state");
-const submissionForm = document.querySelector(".submission-form");
 const profileButtons = document.querySelectorAll("[data-profile-target]");
 
 const activeFilters = {
@@ -55,22 +54,4 @@ profileButtons.forEach((button) => {
     button.setAttribute("aria-expanded", String(!isExpanded));
     button.textContent = isExpanded ? "View profile" : "Hide profile";
   });
-});
-
-submissionForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const formData = new FormData(submissionForm);
-  const name = formData.get("name") || "this musician";
-  const relationship = formData.get("relationship");
-  const discipline = formData.get("discipline") || "";
-  const focus = formData.get("focus") || "";
-  const consent = formData.get("consent") === "confirmed" ? "Confirmed" : "Not confirmed";
-
-  window.location.href = `mailto:music@example.org?subject=Musician profile submission: ${encodeURIComponent(
-    name
-  )}&body=${encodeURIComponent(
-    `Name: ${name}\nInstrument or voice type: ${discipline}\nRelationship: ${relationship}\nProfile link: ${
-      formData.get("profile") || ""
-    }\nShort focus: ${focus}\nPermission for public promotion: ${consent}`
-  )}`;
 });
