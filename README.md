@@ -1,6 +1,6 @@
-# Music Circle
+# MPI-Dresden Music Society
 
-A static promotional website for musicians connected to an institute, its alumni network, and external collaborators.
+A concise static website for the MPI-Dresden music society, including future events, past event records, and piano donation support.
 
 ## Preview
 
@@ -27,12 +27,10 @@ The included `.github/workflows/pages.yml` workflow deploys the static site when
 
 ## Customize
 
-- Replace `Music Circle` with the institute or project name.
-- Update the musician cards in `index.html`.
-- Replace placeholder contact email `music@example.org`.
-- Add real event dates, submission requirements, and media links.
-- Replace donation mail links with official institute donation or payment URLs.
-- Use `PROFILE_TEMPLATE.md` to collect consistent profile details before publishing real artists.
+- Replace placeholder society, event, and donation text in `index.html`.
+- Replace event photos or album covers in `assets/Photos/`.
+- Replace recording links in `assets/Records/`.
+- Replace `#donation-link` with the official institute donation URL.
 
 ## Generated Asset
 

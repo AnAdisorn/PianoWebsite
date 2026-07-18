@@ -1,7 +1,7 @@
 {
-  "name": "Music Circle",
-  "short_name": "Music Circle",
-  "description": "A musician promotion platform for institute artists, alumni, collaborators, and independent performers.",
+  "name": "MPI-Dresden Music Society",
+  "short_name": "MPI Music",
+  "description": "Future events, past recordings, and piano donation support for the MPI-Dresden music community.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fbfaf7",
