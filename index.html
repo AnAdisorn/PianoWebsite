@@ -217,18 +217,18 @@
             </p>
             <a class="button primary" href="#donation-link">Donation link</a>
           </div>
-          <div class="fund-card" aria-label="Donation progress">
+          <div class="fund-card" aria-label="Donation progress" data-fund-card data-raised="0" data-goal="10000">
             <p class="fund-label">Fund raised</p>
-            <p class="fund-percent">0%</p>
+            <p class="fund-percent" data-fund-percent></p>
             <div class="progress-bar" aria-hidden="true">
-              <span style="width: 0%"></span>
+              <span data-fund-bar style="width: 0%"></span>
             </div>
-            <p class="fund-detail">Placeholder: €0 raised of €10,000 goal.</p>
+            <p class="fund-detail" data-fund-detail></p>
           </div>
         </div>
       </section>
     </main>
 
-    <script src="script.js?v=10"></script>
+    <script src="script.js?v=11"></script>
   </body>
 </html>
