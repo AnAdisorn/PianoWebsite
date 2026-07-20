@@ -1,5 +1,21 @@
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+document.querySelectorAll("[data-fund-card]").forEach((card) => {
+  const raised = Number(card.dataset.raised) || 0;
+  const goal = Number(card.dataset.goal) || 0;
+  const percent = goal > 0 ? Math.min(100, Math.round((raised / goal) * 100)) : 0;
+
+  const percentEl = card.querySelector("[data-fund-percent]");
+  const barEl = card.querySelector("[data-fund-bar]");
+  const detailEl = card.querySelector("[data-fund-detail]");
+
+  const formatEuro = (value) => `€${value.toLocaleString("en-IE")}`;
+
+  if (percentEl) percentEl.textContent = `${percent}%`;
+  if (barEl) barEl.style.width = `${percent}%`;
+  if (detailEl) detailEl.textContent = `${formatEuro(raised)} raised of ${formatEuro(goal)} goal.`;
+});
+
 document.querySelectorAll("[data-slideshow]").forEach((slideshow) => {
   const track = slideshow.querySelector(".event-track");
   const slides = Array.from(slideshow.querySelectorAll(".event-card"));
